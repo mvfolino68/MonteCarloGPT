@@ -78,7 +78,7 @@ docker run --env-file .env -p 9000:9000 montecarlogpt
 
 ## 📸 Screenshots
 
-![gif](./assets/../templates/montecarlogpt.gif)
+![gif](./assets/../templates/MonteCarloGPT.gif)
 
 ---
 
