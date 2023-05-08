@@ -26,7 +26,7 @@ def ingest_docs(
 ):
     """Ingest documents from docs into a vectorstore"""
     sitemap_loader = SitemapLoader(
-        web_path="./sitemap.xml"
+        web_path="https://raw.githubusercontent.com/mvfolino68/MonteCarloGPT/master/sitemap.xml"
     )
     raw_documents = sitemap_loader.load()
 

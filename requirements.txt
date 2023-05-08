@@ -12,3 +12,4 @@ sentence-transformers==2.2.2
 uvicorn==0.21.1
 lxml
 bs4
+sentence_transformers
