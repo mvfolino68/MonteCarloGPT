@@ -1,0 +1,14 @@
+faiss-cpu==1.7.3
+fastapi==0.95.0
+huggingface-hub==0.13.4
+Jinja2==3.1.2
+langchain==0.0.134
+nest-asyncio==1.5.6
+openai==0.27.4
+openapi-schema-pydantic==1.2.4
+pinecone-client==2.2.1
+python-dotenv==1.0.0
+sentence-transformers==2.2.2
+uvicorn==0.21.1
+lxml
+bs4

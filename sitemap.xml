@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://docs.getmontecarlo.com/</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/recipes</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/discuss</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/architecture</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/setting-up-monte-carlo</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/security</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/monte-carlo-university</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/quick-start-guide</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/catalog</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/data-collector</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/hybrid-solution</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/aws-networking-tips</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/data-warehouses</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/bigquery</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/redshift</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/overview-databricks</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/databricks-troubleshooting-faq</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/migrating-the-databricks-metadata-job-to-a-job-cluster</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/data-lakes</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/glue</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/athena</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/bi-tools</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/looker</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/tableau</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/dbt-integration</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/fivetran-integration</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/monitors-overview</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/field-health-metrics</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/creating-sql-rules</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/detectors-overview</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/rca-detections</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/slack</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/ms-teams</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/pagerduty</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/field-lineage</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/insights</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/setting-up-single-sign-on-sso</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/creating-an-api-token</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/using-the-api</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/api-explorer</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/change-log</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/using-the-catalog</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/monitors-1</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/automated-monitoring</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/intro-to-custom-monitoring</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/advanced-concepts</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/how-to-add-field-health-monitors-to-monte-carlo-views</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/understanding-dimension-tracking-monitors</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/setting-up-json-schema-monitors</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/setting-up-freshness-slo-monitors</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/setting-up-volume-slo-monitors</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/understanding-sql-rules</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/incidents</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/interacting-with-incidents</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/dashboards</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/using-the-table-health-dashboard</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/settings</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/how-to-create-a-notification-in-monte-carlo</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/advanced-usage</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/muting-schemastables-using-regex</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/project-and-dataset-filtering</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/setting-up-monitors-as-code</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/deployment</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/upgrading-the-data-collector</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/advanced-configuration</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/aws-networking-troubleshoot-guide-2</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/aws-network-recommender</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/peering-templates</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/privatelink-using-cloudformation</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/aws-networking-troubleshoot-guide</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/snowflake</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/postgres</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/sql-server</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/mysql</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/adding-another-warehouse</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/using-self-hosted-credentials</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/databricks-sql-warehouse</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/hive-mysql</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/presto</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/hive-sql</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/spark</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/s3-events-query-logs</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/troubleshooting-faq-data-lakes</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/creating-iam-roles</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/auto-generating-iam-policies</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/creating-event-notifications</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/adding-additional-connections</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/tableau-faqs-and-troubleshooting</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/powerbi</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/power-bi-credential-creation-process</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/sigma</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/periscope-sisense</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/mode</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/adding-or-modifying-bi-connections</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/dbt-cloud</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/dbt-core</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/dbt-failures-are-monte-carlo-incidents</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/faq</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/freshness-rules</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/setting-up-volume-rules</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/field-quality-monitors</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/reducing-noise-from-rules</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/misconfigured-monitors</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/failing-monitors</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/monitor-partition-support</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/alpha-release-field-profiling</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/freshness-detector</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/volume-detector</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/unchanged-size-detector</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/opsgenie</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/webhooks</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/alation</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/mattermost</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/jira-beta</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/github</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/key-assets-importance-score</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/key-assets</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/key-assets-1</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/cleanup-suggestions</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/insight</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/events</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/insight-table-readwrite-activity</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/insight-rule-and-sli-results</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/insight-dimension-tracking-suggestions</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/insight-field-health-suggestions</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/insight-misconfigured-monitors</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/insight-bi-dashboard-analytics</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/insight-incident-history</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/insight-heavy-queries</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/insight-consumption-by-user</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/insight-notification-by-custom-monitor</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/insight-unmonitored-tables</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/insight-field-importance-scores</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/mapping-sso-authorization-groups</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/authorization</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/data-reliability-dashboard</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/pii-filtering</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/tags</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/general</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/integrations</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/lineage</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/monitors</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/using-the-cli</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/using-the-sdk</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/monitors-as-code</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/generating-monte-carlo-monitors-from-dbt-tests</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/notifications-as-code</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/circuit-breakers</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/using-providers</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/docs/data-validators</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/discuss-new</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/discuss/644fd0f9cd4e860011dfcaeb</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/discuss/640a1981b9662700579f57f0</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/discuss/6389338befc347008b6253e9</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/discuss/63385098d7ca89006b624f50</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/discuss/618b8addd95fa0007942ce1f</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/discuss?tag=api</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/discuss?tag=monitors</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/discuss/605badae875110007a1675d5</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/discuss?isFAQ=true</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/discuss?sorting=recent</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.getmontecarlo.com/discuss?sorting=open</loc>
+  <lastmod>2023-05-08T14:38:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
