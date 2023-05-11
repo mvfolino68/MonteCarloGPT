@@ -24,7 +24,7 @@ The app leverages LangChain's streaming support and async API to update the page
    2. set the environment variables for your API key. See [Environment Variables](#environment-variables) for more information.
 4. Setup a vectorstore:
    1. option 1: Use the existing vectorstore:
-      1. download the vectorstore from here and place it in the root directory of the repo. [download here](https://drive.google.com/uc?export=download&id=15nQS7UXPMiDAd5Pg9M1GHu7mq4Og1ITz)
+      1. download the vectorstore from here and place it in the root directory of the repo. [download here](https://drive.google.com/uc?export=download&id=1Y882mmeEzkWiWZBmQVR9GelqsGN-Pesr)
    2. option 2: Create a new vectorstore:
       1. Note: this method will take a while to run due to the size of the Monte Carlo docs.
       2. run `python ingest.py` to ingest Monte Carlo docs data into the vectorstore (only needs to be done once).

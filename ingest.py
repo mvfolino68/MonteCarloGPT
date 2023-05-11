@@ -7,6 +7,8 @@ from langchain.embeddings import HuggingFaceEmbeddings, OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores.faiss import FAISS
 from langchain.vectorstores.pinecone import Pinecone
+from langchain.document_loaders import NotionDirectoryLoader
+
 
 from constants import (
     EMBEDDING_MODEL,
@@ -28,14 +30,29 @@ def ingest_docs(
     sitemap_loader = SitemapLoader(
         web_path="https://raw.githubusercontent.com/mvfolino68/MonteCarloGPT/master/sitemap.xml"
     )
-    raw_documents = sitemap_loader.load()
+    readme_raw_documents = sitemap_loader.load()
 
     # Split documents into chunks
-    text_splitter = RecursiveCharacterTextSplitter(
+    readme_text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=2000,
         chunk_overlap=200,
     )
-    documents = text_splitter.split_documents(raw_documents)
+    readme_documents = readme_text_splitter.split_documents(readme_raw_documents)
+
+    # Create documents from Notion"
+    notion_loader = NotionDirectoryLoader("Notion_DB")
+    notion_raw_documents = notion_loader.load()
+
+    # Split documents into chunks
+    notion_text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=2000,
+        chunk_overlap=200,
+    )
+    notion_documents = notion_text_splitter.split_documents(notion_raw_documents)
+
+    # Combine documents
+    documents = readme_documents + notion_documents
+    
 
     # Create Embeddings
     if embedding_model_type == "HUGGINGFACE":

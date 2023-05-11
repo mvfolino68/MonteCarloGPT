@@ -136,8 +136,9 @@ dmypy.json
 .DS_Store
 
 vectorstore.pkl
-vectorstore1.pkl
+vectorstore-old.pkl
 streaming.py
 langchain.readthedocs.io/
 .venv/
 archive/
+Notion_DB/
