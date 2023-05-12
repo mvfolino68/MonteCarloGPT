@@ -27,6 +27,7 @@ def ingest_docs(
     vectorstore_type=VECTORSTORE_TYPE, embedding_model_type=EMBEDDING_MODEL_TYPE
 ):
     """Ingest documents from docs into a vectorstore"""
+    ### Create documents from README
     sitemap_loader = SitemapLoader(
         web_path="https://raw.githubusercontent.com/mvfolino68/MonteCarloGPT/master/sitemap.xml"
     )
@@ -39,20 +40,31 @@ def ingest_docs(
     )
     readme_documents = readme_text_splitter.split_documents(readme_raw_documents)
 
-    # Create documents from Notion"
-    notion_loader = NotionDirectoryLoader("Notion_DB")
-    notion_raw_documents = notion_loader.load()
+    ### Create documents from internal product docs
+    internal_product_docs_notion_loader = NotionDirectoryLoader("Notion_Internal_Product_Docs_DB")
+    internal_product_docs_notion_raw_documents = internal_product_docs_notion_loader.load()
 
     # Split documents into chunks
-    notion_text_splitter = RecursiveCharacterTextSplitter(
+    internal_product_docs_notion_text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=2000,
         chunk_overlap=200,
     )
-    notion_documents = notion_text_splitter.split_documents(notion_raw_documents)
+    internal_product_docs_notion_documents = internal_product_docs_notion_text_splitter.split_documents(internal_product_docs_notion_raw_documents)
 
-    # Combine documents
-    documents = readme_documents + notion_documents
-    
+    ### Create documents from knowledge base
+    knowledge_base_notion_loader = NotionDirectoryLoader("Notion_Knowledge_Base_DB")
+    knowledge_base_notion_raw_documents = knowledge_base_notion_loader.load()
+
+    # Split documents into chunks
+    knowledge_base_notion_text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=2000,
+        chunk_overlap=200,
+    )
+    knowledge_base_notion_documents = knowledge_base_notion_text_splitter.split_documents(knowledge_base_notion_raw_documents)
+
+    ### Combine documents
+    documents = readme_documents + internal_product_docs_notion_documents + knowledge_base_notion_documents
+
 
     # Create Embeddings
     if embedding_model_type == "HUGGINGFACE":
