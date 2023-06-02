@@ -23,7 +23,7 @@ PGVECTOR_COLLECTION_NAME = os.environ.get("PGVECTOR_COLLECTION_NAME")
 
 # Set these variables if you want to use HuggingFace (free) instead of OpenAI (paid)
 # EMBEDDING_MODEL_TYPE = "OPENAI" or "HUGGINGFACE" OpenAI is paid, HuggingFace is free
-EMBEDDING_MODEL_TYPE = "HUGGINGFACE"
+EMBEDDING_MODEL_TYPE = os.environ.get("EMBEDDING_MODEL_TYPE")
 EMBEDDING_MODEL = "sentence-transformers/all-mpnet-base-v2"
 
 

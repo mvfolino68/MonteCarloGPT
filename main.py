@@ -59,6 +59,9 @@ async def startup_event():
         with open("vectorstore.pkl", "rb") as f:
             vectorstore = pickle.load(f)
 
+    elif vectorstore_type == "PGVECTOR":
+        print("foo")
+
 
 @app.get("/")
 async def get(request: Request):

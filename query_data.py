@@ -1,7 +1,7 @@
 """Create a ConversationalRetrievalChain for question/answering."""
 from typing import List
 
-from langchain.callbacks.base import AsyncCallbackManager
+from langchain.callbacks.manager import AsyncCallbackManager
 from langchain.callbacks.tracers import LangChainTracer
 from langchain.chains import ConversationalRetrievalChain
 from langchain.chains.chat_vector_db.prompts import CONDENSE_QUESTION_PROMPT, QA_PROMPT
@@ -83,6 +83,9 @@ def get_chain(
             temperature=0,
         )
     else:
+        # TODO: site-packages/langchain/llms/openai.py:696: UserWarning: You are trying to use a chat model.
+        #  This way of initializing it is no longer supported.
+        #  Instead, please use: `from langchain.chat_models import ChatOpenAI`
         question_gen_llm = OpenAI(
             model_name="gpt-3.5-turbo",
             max_tokens=1000,
