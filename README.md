@@ -67,6 +67,13 @@ You can set these environment variables in a `.env` file in the root directory o
 | `PINECONE_ENVIRONMENT` | The name of your Pinecone environment. | [Pinecone Quickstart](https://docs.pinecone.io/docs/quickstart) |
 | `PINECONE_INDEX` | The name of the Pinecone index. | [Pinecone Quickstart](https://docs.pinecone.io/docs/quickstart) |
 
+### If using PGVector As Vectorstore
+
+1. Install pgvector in your postgres
+   a. https://github.com/pgvector/pgvector#installation
+   a. `CREATE EXTENSION vector;`
+2. Set the environment variables
+
 ## 🐳 Running locally (Docker)
 
 This method requires that you have Docker installed on your machine. To install Docker, follow the instructions [here](https://docs.docker.com/get-docker/). This setup assumes that you set up your environment variables in a `.env` file in the root directory of the project.

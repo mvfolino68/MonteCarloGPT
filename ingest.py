@@ -7,6 +7,7 @@ from langchain.embeddings import HuggingFaceEmbeddings, OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores.faiss import FAISS
 from langchain.vectorstores.pinecone import Pinecone
+from langchain.vectorstores.pgvector import PGVector
 from langchain.document_loaders import NotionDirectoryLoader
 
 
@@ -17,6 +18,13 @@ from constants import (
     PINECONE_API_KEY,
     PINECONE_ENVIRONMENT,
     PINECONE_INDEX,
+    PGVECTOR_DRIVER,
+    PGVECTOR_HOST,
+    PGVECTOR_PORT,
+    PGVECTOR_DATABASE,
+    PGVECTOR_USER,
+    PGVECTOR_PASSWORD,
+    PGVECTOR_COLLECTION_NAME,
     VECTORSTORE_TYPE,
 )
 
@@ -92,6 +100,26 @@ def ingest_docs(
         # Save FAISS vectorstore
         with open("vectorstore.pkl", "wb") as f:
             pickle.dump(vectorstore, f)
+
+    elif vectorstore_type == "PGVECTOR":
+        # TODO: fail-fast if the postgres doesn't have pgvector installed
+        # https://python.langchain.com/en/latest/modules/indexes/vectorstores/examples/pgvector.html
+        connection_string = PGVector.connection_string_from_db_params(
+            driver=PGVECTOR_DRIVER,
+            host=PGVECTOR_HOST,
+            port=PGVECTOR_PORT,
+            database=PGVECTOR_DATABASE,
+            user=PGVECTOR_USER,
+            password=PGVECTOR_PASSWORD
+        )
+        collection_name=PGVECTOR_COLLECTION_NAME
+
+        PGVector.from_documents(
+            documents=documents,
+            embedding=embeddings,
+            collection_name=collection_name,
+            connection_string=connection_string,
+        )
 
 
 if __name__ == "__main__":
