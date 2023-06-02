@@ -3,16 +3,27 @@ import os
 
 load_dotenv()
 
-VECTORSTORE_TYPE = "FAISS"  # "FAISS" or "PINECONE"
+VECTORSTORE_TYPE = os.environ.get("VECTORSTORE_TYPE") or "FAISS"
 
 # Set Pinecone API Variables if you want to use Pinecone
 PINECONE_API_KEY = os.environ.get("PINECONE_API_KEY")
 PINECONE_INDEX = os.environ.get("PINECONE_INDEX")
 PINECONE_ENVIRONMENT = os.environ.get("PINECONE_ENVIRONMENT")
 
+# Set PGVector Variables if you want to use PGVector
+## Postgres variables
+PGVECTOR_DRIVER = os.environ.get("PGVECTOR_DRIVER")
+PGVECTOR_HOST = os.environ.get("PGVECTOR_HOST")
+PGVECTOR_PORT = os.environ.get("PGVECTOR_PORT")
+PGVECTOR_DATABASE = os.environ.get("PGVECTOR_DATABASE")
+PGVECTOR_USER = os.environ.get("PGVECTOR_USER")
+PGVECTOR_PASSWORD = os.environ.get("PGVECTOR_PASSWORD")
+## PGVector variables
+PGVECTOR_COLLECTION_NAME = os.environ.get("PGVECTOR_COLLECTION_NAME")
+
 # Set these variables if you want to use HuggingFace (free) instead of OpenAI (paid)
 # EMBEDDING_MODEL_TYPE = "OPENAI" or "HUGGINGFACE" OpenAI is paid, HuggingFace is free
-EMBEDDING_MODEL_TYPE = "HUGGINGFACE"
+EMBEDDING_MODEL_TYPE = os.environ.get("EMBEDDING_MODEL_TYPE")
 EMBEDDING_MODEL = "sentence-transformers/all-mpnet-base-v2"
 
 

@@ -29,7 +29,8 @@ The app leverages LangChain's streaming support and async API to update the page
       1. Note: this method will take a while to run due to the size of the Monte Carlo docs.
       2. run `python ingest.py` to ingest Monte Carlo docs data into the vectorstore (only needs to be done once).
       3. you can use other [Document Loaders](https://langchain.readthedocs.io/en/latest/modules/document_loaders.html) to load your own data into the vectorstore.
-5. Run the app: `make start`
+5. `pip install uvicorn[standard]` so your local machine has websockets (beyond the requirements.txt)
+6. Run the app: `make start`
 6. Open [localhost:9000](http://localhost:9000) in your browser.
 7. Ask a question! 🎉
 
@@ -66,6 +67,13 @@ You can set these environment variables in a `.env` file in the root directory o
 | `PINECONE_API_KEY` | Your Pinecone API key. | [Pinecone Quickstart](https://docs.pinecone.io/docs/quickstart) |
 | `PINECONE_ENVIRONMENT` | The name of your Pinecone environment. | [Pinecone Quickstart](https://docs.pinecone.io/docs/quickstart) |
 | `PINECONE_INDEX` | The name of the Pinecone index. | [Pinecone Quickstart](https://docs.pinecone.io/docs/quickstart) |
+
+### If using PGVector As Vectorstore
+
+1. Install pgvector in your postgres
+   a. https://github.com/pgvector/pgvector#installation
+   a. `CREATE EXTENSION vector;`
+2. Set the environment variables
 
 ## 🐳 Running locally (Docker)
 
