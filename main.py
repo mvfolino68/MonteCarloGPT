@@ -11,6 +11,7 @@ from fastapi.templating import Jinja2Templates
 from langchain.embeddings import HuggingFaceEmbeddings, OpenAIEmbeddings
 from langchain.vectorstores import VectorStore
 from langchain.vectorstores.pinecone import Pinecone
+from langchain.vectorstores.pgvector import PGVector
 
 from callback import QuestionGenCallbackHandler, StreamingLLMCallbackHandler
 from constants import (
@@ -20,6 +21,13 @@ from constants import (
     PINECONE_API_KEY,
     PINECONE_ENVIRONMENT,
     PINECONE_INDEX,
+    PGVECTOR_DRIVER,
+    PGVECTOR_HOST,
+    PGVECTOR_PORT,
+    PGVECTOR_DATABASE,
+    PGVECTOR_USER,
+    PGVECTOR_PASSWORD,
+    PGVECTOR_COLLECTION_NAME,
     VECTORSTORE_TYPE,
 )
 from query_data import get_chain
@@ -38,13 +46,14 @@ async def startup_event():
     global vectorstore
 
     logging.info("loading vectorstore")
+    if embedding_model_type == "OPENAI":
+        embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
+    elif embedding_model_type == "HUGGINGFACE":
+        embeddings = embedding_model_type == HuggingFaceEmbeddings(
+            model_name=EMBEDDING_MODEL
+        )
+
     if vectorstore_type == "PINECONE":
-        if embedding_model_type == "OPENAI":
-            embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
-        elif embedding_model_type == "HUGGINGFACE":
-            embeddings = embedding_model_type == HuggingFaceEmbeddings(
-                model_name=EMBEDDING_MODEL
-            )
         pinecone.init(api_key=PINECONE_API_KEY, environment=PINECONE_ENVIRONMENT)
         index_name = PINECONE_INDEX
         vectorstore = Pinecone.from_existing_index(
@@ -60,7 +69,19 @@ async def startup_event():
             vectorstore = pickle.load(f)
 
     elif vectorstore_type == "PGVECTOR":
-        print("foo")
+        connection_string = PGVector.connection_string_from_db_params(
+            driver=PGVECTOR_DRIVER,
+            host=PGVECTOR_HOST,
+            port=PGVECTOR_PORT,
+            database=PGVECTOR_DATABASE,
+            user=PGVECTOR_USER,
+            password=PGVECTOR_PASSWORD
+        )
+        vectorstore = PGVector(
+            connection_string=connection_string,
+            embedding_function=embeddings,
+            collection_name=PGVECTOR_COLLECTION_NAME,
+        )
 
 
 @app.get("/")
