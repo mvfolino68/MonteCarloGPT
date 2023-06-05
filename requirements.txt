@@ -1,17 +1,18 @@
-faiss-cpu==1.7.3
-fastapi==0.95.0
-huggingface-hub==0.13.4
+faiss-cpu==1.7.4
+fastapi==0.96.0
+huggingface-hub==0.15.1
 Jinja2==3.1.2
-langchain @ git+https://github.com/tarasglek/langchain@taras/vector-dimensions
+langchain==0.0.189
 nest-asyncio==1.5.6
-openai==0.27.4
+openai==0.27.7
 openapi-schema-pydantic==1.2.4
 pgvector==0.1.8
 pinecone-client==2.2.1
 psycopg2==2.9.6
 python-dotenv==1.0.0
 sentence-transformers==2.2.2
-uvicorn==0.21.1
-lxml
-bs4
-sentence_transformers
+tiktoken==0.4.0
+uvicorn==0.22.0
+# For sitemap scraping only
+# lxml==4.9.2
+# beautifulsoup4=4.12.2
