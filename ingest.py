@@ -10,7 +10,6 @@ from langchain.vectorstores.pinecone import Pinecone
 from langchain.vectorstores.pgvector import PGVector
 from langchain.document_loaders import NotionDirectoryLoader
 
-
 from constants import (
     EMBEDDING_MODEL,
     EMBEDDING_MODEL_TYPE,
@@ -85,43 +84,45 @@ def create_docs(
     vectorstore_type=VECTORSTORE_TYPE, 
 ):
     """Ingest documents from docs into a vectorstore"""
-    ### Create documents from README
+    # Create a text splitter
+    text_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=2000,
+    chunk_overlap=200,
+    )
+
+    #Create documents from README
     sitemap_loader = SitemapLoader(
         web_path="https://raw.githubusercontent.com/mvfolino68/MonteCarloGPT/master/sitemap.xml"
     )
     readme_raw_documents = sitemap_loader.load()
 
     # Split documents into chunks
-    readme_text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=2000,
-        chunk_overlap=200,
-    )
-    readme_documents = readme_text_splitter.split_documents(readme_raw_documents)
+    readme_documents = text_splitter.split_documents(readme_raw_documents)
 
-    ### Create documents from internal product docs
-    internal_product_docs_notion_loader = NotionDirectoryLoader("Notion_Internal_Product_Docs_DB")
-    internal_product_docs_notion_raw_documents = internal_product_docs_notion_loader.load()
+    documents = readme_documents
 
-    # Split documents into chunks
-    internal_product_docs_notion_text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=2000,
-        chunk_overlap=200,
-    )
-    internal_product_docs_notion_documents = internal_product_docs_notion_text_splitter.split_documents(internal_product_docs_notion_raw_documents)
+    # Try to create documents from Notion
+    try:
+        #Create documents from internal product docs
+        internal_product_docs_notion_loader = NotionDirectoryLoader("Notion_Internal_Product_Docs_DB")
+        internal_product_docs_notion_raw_documents = internal_product_docs_notion_loader.load()
 
-    ### Create documents from knowledge base
-    knowledge_base_notion_loader = NotionDirectoryLoader("Notion_Knowledge_Base_DB")
-    knowledge_base_notion_raw_documents = knowledge_base_notion_loader.load()
+        # Split documents into chunks
+        internal_product_docs_notion_documents = text_splitter.split_documents(internal_product_docs_notion_raw_documents)
+        documents += internal_product_docs_notion_documents
+    except:
+        pass
 
-    # Split documents into chunks
-    knowledge_base_notion_text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=2000,
-        chunk_overlap=200,
-    )
-    knowledge_base_notion_documents = knowledge_base_notion_text_splitter.split_documents(knowledge_base_notion_raw_documents)
+    try:
+        #Create documents from knowledge base
+        knowledge_base_notion_loader = NotionDirectoryLoader("Notion_Knowledge_Base_DB")
+        knowledge_base_notion_raw_documents = knowledge_base_notion_loader.load()
 
-    ### Combine documents
-    documents = readme_documents + internal_product_docs_notion_documents + knowledge_base_notion_documents
+        # Split documents into chunks
+        knowledge_base_notion_documents = text_splitter.split_documents(knowledge_base_notion_raw_documents)
+        documents += knowledge_base_notion_documents
+    except:
+        pass
 
     return documents
 

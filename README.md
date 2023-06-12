@@ -31,8 +31,8 @@ The app leverages LangChain's streaming support and async API to update the page
       3. you can use other [Document Loaders](https://langchain.readthedocs.io/en/latest/modules/document_loaders.html) to load your own data into the vectorstore.
 5. `pip install uvicorn[standard]` so your local machine has websockets (beyond the requirements.txt)
 6. Run the app: `make start`
-6. Open [localhost:9000](http://localhost:9000) in your browser.
-7. Ask a question! 🎉
+7. Open [localhost:9000](http://localhost:9000) in your browser.
+8. Ask a question! 🎉
 
 ## Environment Variables
 
