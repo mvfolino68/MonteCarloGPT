@@ -1,7 +1,7 @@
 """Create a ConversationalRetrievalChain for question/answering."""
 from typing import List
 
-from langchain.callbacks.manager import AsyncCallbackManager
+from langchain.callbacks.base import AsyncCallbackManager
 from langchain.callbacks.tracers import LangChainTracer
 from langchain.chains import ConversationalRetrievalChain
 from langchain.chains.chat_vector_db.prompts import CONDENSE_QUESTION_PROMPT, QA_PROMPT
@@ -40,10 +40,6 @@ Documents:
 {context}
 =========
 Answer in Markdown:"""
-
-# QA_PROMPT = PromptTemplate(
-#     template=prompt_template, input_variables=["context", "question"]
-# )
 
 
 def get_chain(

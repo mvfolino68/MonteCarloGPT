@@ -30,9 +30,59 @@ from constants import (
 
 nest_asyncio.apply()
 
+def create_embeddings(embedding_model_type=EMBEDDING_MODEL_TYPE):
+    """Create embeddings for vectorstore"""
+    if embedding_model_type == "HUGGINGFACE":
+        # Use hugging face embeddings for free
+        model_name = EMBEDDING_MODEL
+        embeddings = HuggingFaceEmbeddings(model_name=model_name)
 
-def ingest_docs(
-    vectorstore_type=VECTORSTORE_TYPE, embedding_model_type=EMBEDDING_MODEL_TYPE
+    elif embedding_model_type == "OPENAI":
+        # Use OpenAI embeddings at a cost
+        embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
+    
+    return embeddings
+
+def create_vectorstore( vectorstore_type=VECTORSTORE_TYPE, embeddings=None, documents=None):
+    """Create vectorstore"""
+    if vectorstore_type == "PINECONE":
+        # Uinitialize Pinecone and create index
+        pinecone.init(api_key=PINECONE_API_KEY, environment=PINECONE_ENVIRONMENT)
+        index_name = PINECONE_INDEX
+        vectorstore = Pinecone.from_documents(
+            documents, embeddings, index_name=index_name
+        )
+
+    elif vectorstore_type == "FAISS":
+        # Use FAISS vectorstore
+        vectorstore = FAISS.from_documents(documents, embeddings)
+
+        # Save FAISS vectorstore
+        with open("vectorstore.pkl", "wb") as f:
+            pickle.dump(vectorstore, f)
+
+    elif vectorstore_type == "PGVECTOR":
+        # TODO: fail-fast if the postgres doesn't have pgvector installed
+        # https://python.langchain.com/en/latest/modules/indexes/vectorstores/examples/pgvector.html
+        connection_string = PGVector.connection_string_from_db_params(
+            driver=PGVECTOR_DRIVER,
+            host=PGVECTOR_HOST,
+            port=PGVECTOR_PORT,
+            database=PGVECTOR_DATABASE,
+            user=PGVECTOR_USER,
+            password=PGVECTOR_PASSWORD
+        )
+        collection_name=PGVECTOR_COLLECTION_NAME
+
+        PGVector.from_documents(
+            documents=documents,
+            embedding=embeddings,
+            collection_name=collection_name,
+            connection_string=connection_string,
+        )
+
+def create_docs(
+    vectorstore_type=VECTORSTORE_TYPE, 
 ):
     """Ingest documents from docs into a vectorstore"""
     ### Create documents from README
@@ -73,54 +123,13 @@ def ingest_docs(
     ### Combine documents
     documents = readme_documents + internal_product_docs_notion_documents + knowledge_base_notion_documents
 
+    return documents
 
-    # Create Embeddings
-    if embedding_model_type == "HUGGINGFACE":
-        # Use hugging face embeddings for free
-        model_name = EMBEDDING_MODEL
-        embeddings = HuggingFaceEmbeddings(model_name=model_name)
+### Create documents
+documents = create_docs()
 
-    elif embedding_model_type == "OPENAI":
-        # Use OpenAI embeddings at a cost
-        embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
-
-    # Create vectorstore
-    if vectorstore_type == "PINECONE":
-        # Uinitialize Pinecone and create index
-        pinecone.init(api_key=PINECONE_API_KEY, environment=PINECONE_ENVIRONMENT)
-        index_name = PINECONE_INDEX
-        vectorstore = Pinecone.from_documents(
-            documents, embeddings, index_name=index_name
-        )
-
-    elif vectorstore_type == "FAISS":
-        # Use FAISS vectorstore
-        vectorstore = FAISS.from_documents(documents, embeddings)
-
-        # Save FAISS vectorstore
-        with open("vectorstore.pkl", "wb") as f:
-            pickle.dump(vectorstore, f)
-
-    elif vectorstore_type == "PGVECTOR":
-        # TODO: fail-fast if the postgres doesn't have pgvector installed
-        # https://python.langchain.com/en/latest/modules/indexes/vectorstores/examples/pgvector.html
-        connection_string = PGVector.connection_string_from_db_params(
-            driver=PGVECTOR_DRIVER,
-            host=PGVECTOR_HOST,
-            port=PGVECTOR_PORT,
-            database=PGVECTOR_DATABASE,
-            user=PGVECTOR_USER,
-            password=PGVECTOR_PASSWORD
-        )
-        collection_name=PGVECTOR_COLLECTION_NAME
-
-        PGVector.from_documents(
-            documents=documents,
-            embedding=embeddings,
-            collection_name=collection_name,
-            connection_string=connection_string,
-        )
-
+### Create embeddings
+embeddings = create_embeddings()
 
 if __name__ == "__main__":
-    ingest_docs()
+    create_vectorstore(embeddings=embeddings, documents=documents)

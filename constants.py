@@ -26,7 +26,6 @@ PGVECTOR_COLLECTION_NAME = os.environ.get("PGVECTOR_COLLECTION_NAME")
 EMBEDDING_MODEL_TYPE = os.environ.get("EMBEDDING_MODEL_TYPE")
 EMBEDDING_MODEL = "sentence-transformers/all-mpnet-base-v2"
 
-
 # Set Azure API Variables if you want to use Azure
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 OPENAI_API_TYPE = os.environ["OPENAI_API_TYPE"]
